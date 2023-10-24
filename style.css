@@ -99,9 +99,6 @@ header{
   position: relative;
 }
 .right-img img{
-  /* background-image: url(./img/header-img.png);
-  background-size: cover;
-  background-repeat: no-repeat;*/
   max-width: 700px; 
   float: left;
   transform: translate(-92%);
@@ -124,8 +121,6 @@ header{
   font-family: 'sharp sans no1 book';
   font-size: 24px;
   font-style: normal;
-  /* font-weight: 750;
-  line-height: 34px; 141.667% */
   max-width: 504px;
   margin-top: 30px;
 }
@@ -151,8 +146,6 @@ header{
 }  
 .header-content{
   justify-content: space-between;
-  
-
 }
 /* Header */
 
@@ -174,7 +167,6 @@ header{
   font-family: 'sharp sans no1 book';
   font-size: 24px;
   font-style: normal;
-  /* font-weight: 750; */
   line-height: normal;
 }
 .why-choose .icons-container .item .item-heading{
@@ -191,8 +183,7 @@ header{
   font-family: 'sharp sans no1 book';
   font-size: 18px;
   font-style: normal;
-  /* font-weight: 750; */
-  line-height: 28px; /*155.556% */
+  line-height: 28px; 
   max-width: 270px;
   margin-top: 18px;
 }
@@ -238,8 +229,7 @@ header{
 }
 /* Why choose */
 
-/* About us */
-
+/* About us *
 .about-us{
   margin-top: 120px;
   gap: 95px;
@@ -258,7 +248,7 @@ header{
   color: var(--black, #181D19);
   font-size: 22px;
   font-style: normal;
-  line-height: 34px; /* 154.545% */
+  line-height: 34px;
 }
 .about-us .section-desc{
   margin-top: 30px;
@@ -274,7 +264,6 @@ header{
   font-family: 'Sofia Pro Regular';
   font-size: 24px;
   font-style: normal;
-  /* font-weight: 400; */
   line-height: normal;
   border: none;
 }
@@ -285,7 +274,6 @@ header{
   font-family: 'Sofia Pro Regular';
   font-size: 24px;
   font-style: normal;
-  /* font-weight: 400; */
   line-height: normal;
 }
 .green-btn:hover,
@@ -318,6 +306,7 @@ header{
   margin-bottom: 40px;
 }
 /* fresh-veg */
+
 /* chefs */
 .chefs{
   align-items: center;
@@ -341,6 +330,7 @@ header{
   margin-bottom: 30px;
 }
 /* chefs */
+
 /* dishes */
 .dishes{
   margin-top: 140px;
@@ -403,6 +393,7 @@ header{
   margin: 0 135px;
 }
 /* dishes */
+
 /* clients */
 .clients-container{
   margin-left: 0;
@@ -498,6 +489,7 @@ header{
   opacity: 1;
 }
 /* clients */
+
 /* subscribe */
 .get-started-btn{
   border-radius: 50px;
@@ -560,9 +552,9 @@ input{
   padding-left: 20px;
   font-family: 'sharp sans no1 book';
   font-size: 18px;
-
 }
 /* subscribe */
+
 /* footer */
 .bottom-line{
   color: #FFF;
@@ -679,7 +671,6 @@ input{
   margin-top: 70px;
   margin-bottom: 70px;
 }
-
 .about-us-page .about-us .section-desc{
   margin-bottom: 0;
 }
@@ -718,11 +709,9 @@ input{
   line-height: normal;
   justify-content: space-between;
 }
-
 .about-us-page .active, .accordion:hover {
   background-color:#e1f2e1; 
 }
-
 .panel {
   padding:  18px;
   display: none;
@@ -738,7 +727,6 @@ ion-icon{
 .about-us-page .accordion-container{
   margin: 20px 0;
 }
-
 /* accordion */
 .picture-marketing img{
   max-width: 100%;
@@ -755,7 +743,6 @@ ion-icon{
 .marketing .text-content{
   max-width: 50%;
 }
-
 .marketing{
   gap: 30px;
   justify-content: space-around;
@@ -785,7 +772,6 @@ ion-icon{
 /* about us page */
 
 /* testimonials */
-
 .business .dish-item{
   max-width: calc(50% - 51px);
   padding: 30px;
@@ -814,8 +800,8 @@ ion-icon{
   margin-top: 48px;
 }
 /* testimonials */
-/* modal */
 
+/* modal */
 .modal {
   display: none;
   position: fixed; 
@@ -829,7 +815,6 @@ ion-icon{
   background-color: rgb(0,0,0); 
   background-color: rgba(0,0,0,0.4); 
 }
-
 body .modal-content {
   background-color: #fefefe;
   margin: auto;
@@ -841,7 +826,6 @@ body .modal-content {
   align-items: center;
   position: relative;
 }
-
 .close {
   color: #aaaaaa;
   float: right;
@@ -852,7 +836,6 @@ body .modal-content {
   right: 0;
   margin: 5px 10px;
 }
-
 .modal-content .green-btn{
   width: 110px;
   height: 44px;
