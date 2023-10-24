@@ -1,11 +1,17 @@
+// Bootstrap
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+// Fonts
 import './fonts/stylesheet.css'
+
+// Main styles
 import './style.css'
 import './responsive.css'
-var modal = document.getElementById("myModal");
 
-var orderBtn1 = document.getElementById("orderBtn1");
-
-var span = document.getElementsByClassName("close")[0];
+let modal     = document.getElementById( "myModal" );
+let orderBtn1 = document.getElementById( "orderBtn1" );
+let span      = document.getElementsByClassName( "close" )[0];
  
 orderBtn1.onclick = function() {
   modal.style.display = "block";

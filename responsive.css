@@ -192,8 +192,8 @@
 
 }
 @media(max-width: 860px){
-    .modal-content{
-        width: 80%;
+    body .modal-content{
+        width: 90%;
     }
 }
 @media(max-width: 848px){
@@ -211,6 +211,9 @@
         gap: 60px;
         align-items: center;
         justify-content: center;
+    }
+    .about-us .section-desc{
+        margin-bottom: 30px;
     }
     .fresh-veg,
     .dishes{
@@ -267,7 +270,8 @@
 @media(max-width: 716px){
     .contact-section{
        flex-direction: column;
-       row-gap: 20px;
+       row-gap: 40px;
+       align-items: center;
     }
     .contact-container{
         max-width: 90%;

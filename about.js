@@ -1,6 +1,14 @@
+// Bootstrap
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+// Fonts
 import './fonts/stylesheet.css'
+
+// Main styles
 import './style.css'
 import './responsive.css'
+
 let arrowDown = document.querySelectorAll('ion-icon');
 console.log(arrowDown)
 var acc = document.getElementsByClassName("accordion");   

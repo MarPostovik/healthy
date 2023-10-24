@@ -115,7 +115,6 @@ header{
   line-height: normal;
   margin-top: 166px;
   max-width: 596px;
-  
 }
 .heading-1 .green{
   color: #5FB848;
@@ -648,7 +647,7 @@ input{
   justify-content: space-around;
   align-items: start;
   margin-top: 50px;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 .contact-container{
   flex-direction: column;
@@ -831,7 +830,7 @@ ion-icon{
   background-color: rgba(0,0,0,0.4); 
 }
 
-.modal-content {
+body .modal-content {
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
