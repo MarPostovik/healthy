@@ -180,6 +180,12 @@
     }
     
 }
+@media(max-width: 890px){
+ body .modal-content,
+ .modal-form-container {
+    width: 75%;   
+ }
+}
 @media(max-width: 888px){
     .header-content{
         flex-wrap: wrap;
@@ -190,11 +196,6 @@
         max-width: 80%;
     }
 
-}
-@media(max-width: 860px){
-    body .modal-content{
-        width: 90%;
-    }
 }
 @media(max-width: 848px){
     .testimonials .feedbacks-container .feedback{
@@ -290,7 +291,8 @@
     }
 }
 @media(max-width: 636px){
-    .modal-content{
+    .modal-content,
+    .modal-form-container{
         width: 90%;
     }
 }
@@ -312,14 +314,18 @@
         margin-bottom: 30px;
         justify-content: start;
     }
+    body .modal-content,
+    .modal-form-container{
+        width: 90%;
+    }
 }
-@media(max-width: 590px){
+/* @media(max-width: 590px){
     .form{
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
-}
+} */
 @media(max-width: 528px){
     .menu-list{
         gap: 15px;    
@@ -345,6 +351,9 @@
     }
     .footer-content{
        padding: 50px 30px;
+    }
+    .modal-heading{
+        font-size: 26px;
     }
 
 }
@@ -394,12 +403,12 @@
     }
 
 }
-@media(max-width: 415px){
+/* @media(max-width: 415px){
     .form input{
         width: 90%;
     }
    
-}
+} */
 @media(max-width: 360px){
     .feedback .photo-and-info{
         flex-wrap: wrap;
@@ -411,7 +420,11 @@
     .modal-content input::placeholder,
     .modal-content input,
     .modal-content textarea,
-    .modal-content textarea::placeholder{
+    .modal-content textarea::placeholder,
+    .modal-form-container input::placeholder,
+    .modal-form-container input,
+    .modal-form-container textarea,
+    .modal-form-container textarea::placeholder{
          font-size: 14px;
     }
 }
@@ -427,4 +440,17 @@
         max-width: 750px;
         width: 750px;
     }
+}
+@media(min-width: 2720px){
+    .testimonials .feedbacks-container .feedback{
+        width: 50%;
+    }
+    .about-us-page section,
+    .header-content,
+    .about-us,
+    .fresh-veg,
+    .chefs{
+        max-width: 50%;
+        margin: 30px auto 50px;
+    } 
 }
