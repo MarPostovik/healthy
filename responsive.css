@@ -319,6 +319,13 @@
         width: 90%;
     }
 }
+@media(max-width: 590px){
+    .form{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
 @media(max-width: 528px){
     .menu-list{
         gap: 15px;    
