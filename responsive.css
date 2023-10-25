@@ -403,6 +403,12 @@
     }
 
 }
+@media(max-width: 415px){
+    .form input{
+        width: 90%;
+    }
+   
+}
 @media(max-width: 360px){
     .feedback .photo-and-info{
         flex-wrap: wrap;
