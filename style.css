@@ -331,6 +331,7 @@ header{
   font-style: normal;
   line-height: normal;
   gap: 17px;
+  align-items: center;
 }
 .chef-list{
   flex-direction: column;
