@@ -417,7 +417,6 @@
         flex-wrap: wrap;
     }
     .modal-form-container input{
-        height: 40px;
         margin: 10px 0;
     }
     textarea{
