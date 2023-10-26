@@ -47,8 +47,12 @@ closeBtns.forEach(btn => {
 
 function clearFormFields() {
     const modalFields = formModal.querySelectorAll('input');
+    const modaltextarea = formModal.querySelectorAll('textarea');
 
     modalFields.forEach( field => { 
+        field.value = ''
+    });
+    modaltextarea.forEach( field => { 
         field.value = ''
     });
 }
@@ -100,15 +104,19 @@ closeBtn2.forEach(btn => {
 
 function clearFormFields2() {
     const modalFields = myModal2.querySelectorAll('input');
+    const modaltextarea = myModal2.querySelectorAll('textarea');
 
     modalFields.forEach( field => { 
+        field.value = ''
+    });
+    modaltextarea.forEach( field => { 
         field.value = ''
     });
 }
 
 form2.addEventListener('submit', e => {
     e.preventDefault();
-    const formData = new FormData(form);
+    const formData = new FormData(form2);
 
     fetch("/", {
       method: "POST",

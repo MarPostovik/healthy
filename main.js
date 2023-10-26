@@ -35,7 +35,7 @@ for(let i = 0; i < dish.length; i++) {
 		})
 	}
 }
-
+//modal form
 const MODAL_ACTIVE_CLASS_NAME = 'modal-active';
 
 const formModal = document.querySelector('#form-modal');
@@ -76,8 +76,12 @@ closeBtns.forEach(btn => {
 
 function clearFormFields() {
     const modalFields = formModal.querySelectorAll('input');
+    const modaltextarea = formModal.querySelectorAll('textarea');
 
     modalFields.forEach( field => { 
+        field.value = ''
+    });
+    modaltextarea.forEach( field => { 
         field.value = ''
     });
 }
@@ -102,6 +106,31 @@ form.addEventListener('submit', e => {
       })
       .catch((error) => console.log('Sending form failed'));
 })
+//subscribtion form
+let subscribeform = document.getElementById('subscribe-form');
+
+function clearSubscribeFormFields() {
+    const modalField = subscribeform.querySelectorAll('input');
+
+    modalField.forEach( field => { 
+        field.value = ''
+    });
+}
+subscribeform.addEventListener('submit', e => {
+    e.preventDefault();
+    const formData = new FormData(subscribeform);
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => {
+		clearSubscribeFormFields();
+      })
+      .catch((error) => console.log('Sending form failed'));
+})
+
 /* -------------------
 * jQuery start
 * from here

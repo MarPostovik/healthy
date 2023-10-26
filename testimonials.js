@@ -45,8 +45,12 @@ closeBtns.forEach(btn => {
 
 function clearFormFields() {
     const modalFields = formModal.querySelectorAll('input');
+    const modaltextarea = formModal.querySelectorAll('textarea');
 
     modalFields.forEach( field => { 
+        field.value = ''
+    });
+    modaltextarea.forEach( field => { 
         field.value = ''
     });
 }

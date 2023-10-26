@@ -41,18 +41,21 @@
                       <form action="#" class="modal-form" data-netlify="true" id="form">
                           <h4 class="modal-heading">We will contact with you</h4>
                           <div>
-                            <label>
-                              <input type="text" placeholder="Type your name">
+                            <label class="d-flex">
+                              <span class="input-label section-desc">Name: </span>
+                              <input type="text" placeholder="Type your name" required>
                             </label>
                           </div>
                           <div>
-                            <label>
-                              <input type="tel" placeholder="Type your phone number">
+                            <label class="d-flex">
+                              <span class="input-label section-desc">Phone: </span>
+                              <input type="tel" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" placeholder="012 345 6789" required>
                             </label>
                           </div>
                           <div>
-                            <label>
-                              <input type="email" placeholder="Type your email">
+                            <label class="d-flex">
+                              <span class="input-label section-desc">Email: </span>
+                              <input type="email" placeholder="Type your email" required>
                             </label>
                           </div>
                           <div>
@@ -68,7 +71,7 @@
                 <div class="modal-form-container">
                     <button class="close-btn close">&times;</button>
                    <div class="modal-heading green">Thank you!</div>
-                   <div class="section-desc">We recieved your information.<br> Our mangers will call or write to you.</div>
+                   <div class="section-desc">We recieved your information.<br> Our managers will call or write to you.</div>
                     <div class="green section-desc">Have a nice day!</div>
                 </div>
               </div> 

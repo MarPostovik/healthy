@@ -385,6 +385,9 @@
     .Mycontainer{
         margin: 0 20px;
     }
+    .modal-form-container input{
+        width: 90%;
+    }
 }
 @media(max-width: 425px){
     .menu-list{
@@ -408,6 +411,21 @@
         width: 90%;
     }
    
+}
+@media(max-width: 394px){
+    .modal-form-container label{
+        flex-wrap: wrap;
+    }
+    .modal-form-container input{
+        height: 40px;
+        margin: 10px 0;
+    }
+    textarea{
+        padding: 10px;
+    }
+    .modal-form-container{
+        padding: 20px;
+    }
 }
 @media(max-width: 360px){
     .feedback .photo-and-info{
