@@ -445,6 +445,11 @@
          font-size: 14px;
     }
 }
+@media(max-width: 300px){
+    .modal-form-container input{
+        height: 40px;
+    }
+}
 @media(max-width: 248px){
     .feedback .top-info{
         gap: 0;
