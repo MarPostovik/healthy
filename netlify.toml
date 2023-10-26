@@ -1,5 +1,5 @@
 [build]
-  base = "/healthyfood/"  # Set the base path for your site
+  # Set the base path for your site
   publish = "dist"        # The directory where your Vite project is built
 
 [[redirects]]
