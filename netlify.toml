@@ -1,22 +1,28 @@
 [build]
-  publish = "dist"
+  base = "/healthyfood/"  # Set the base path for your site
+  publish = "dist"        # The directory where your Vite project is built
 
 [[redirects]]
-  from = "/about-us"
+  from = "/healthyfood/index.html"        # Redirect requests for index.html
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/healthyfood/about-us.html"     # Redirect requests for about-us.html
   to = "/about-us.html"
   status = 200
 
 [[redirects]]
-  from = "/contact"
+  from = "/healthyfood/contact.html"      # Redirect requests for contact.html
   to = "/contact.html"
   status = 200
 
 [[redirects]]
-  from = "/testimonials"
+  from = "/healthyfood/testimonials.html"  # Redirect requests for testimonials.html
   to = "/testimonials.html"
   status = 200
 
 [[redirects]]
-  from = "/*"              # Catch-all for any other route
-  to = "/index.html"
+  from = "/healthyfood/assets/*"          # Redirect requests for files under the assets directory
+  to = "/assets/:splat"
   status = 200
