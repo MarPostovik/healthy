@@ -59,7 +59,7 @@ form.addEventListener('submit', e => {
     e.preventDefault();
     const formData = new FormData(form);
 
-    fetch("/healthyfood/", {
+    fetch("/healthyfood/testimonials.html", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
