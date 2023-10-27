@@ -586,6 +586,9 @@ input{
   line-height: normal;
   text-decoration: none;
 }
+.link-item:hover{
+  color: #5FB848;
+}
 .link-list li{
   list-style-type: none;
 }
@@ -911,6 +914,7 @@ textarea::placeholder{
   pointer-events: none;
   transition: all 0.3s ease-in-out;
   z-index: 9999;
+  overflow-y: auto;
 }
 .modal-form-container{
   background-color: #fefefe;
@@ -933,6 +937,7 @@ textarea::placeholder{
 .modal-active{
   opacity: 1;
   pointer-events: all;
+  overflow: auto;
 }
 .modal-form-container .input-label{
   margin: 0 10px;
