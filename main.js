@@ -109,7 +109,14 @@ form.addEventListener('submit', e => {
 //subscribtion form
 let subscribeform = document.getElementById('subscribe-form');
 let SuccessSubscribeModal = document.getElementById('success-subscribe-modal');
+let SuccessSubscribeModalCLoseBtn = SuccessSubscribeModal.querySelectorAll('.close-btn');
 
+SuccessSubscribeModalCLoseBtn.forEach(btn => {
+    btn.addEventListener('click', e => {
+        e.stopPropagation();
+        closeSuccessSubscribeModal();
+    })
+})
 function clearSubscribeFormFields() {
     const modalField = subscribeform.querySelectorAll('input');
 
