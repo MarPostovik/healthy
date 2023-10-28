@@ -108,6 +108,7 @@ form.addEventListener('submit', e => {
 })
 //subscribtion form
 let subscribeform = document.getElementById('subscribe-form');
+let SuccessSubscribeModal = document.getElementById('success-subscribe-modal');
 
 function clearSubscribeFormFields() {
     const modalField = subscribeform.querySelectorAll('input');
@@ -116,6 +117,13 @@ function clearSubscribeFormFields() {
         field.value = ''
     });
 }
+const closeSuccessSubscribeModal = () => {
+	SuccessSubscribeModal.classList.remove(MODAL_ACTIVE_CLASS_NAME);
+};
+
+const openSuccessSubscribeModal = () => {
+    SuccessSubscribeModal.classList.add(MODAL_ACTIVE_CLASS_NAME);
+};
 subscribeform.addEventListener('submit', e => {
     e.preventDefault();
     const formData = new FormData(subscribeform);
@@ -126,6 +134,8 @@ subscribeform.addEventListener('submit', e => {
       body: new URLSearchParams(formData).toString(),
     })
       .then(() => {
+		setTimeout(openSuccessSubscribeModal, 700);
+        setTimeout(closeSuccessSubscribeModal, 300);
 		clearSubscribeFormFields();
       })
       .catch((error) => console.log('Sending form failed'));
