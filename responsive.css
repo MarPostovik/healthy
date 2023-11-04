@@ -244,6 +244,18 @@
         max-width: 90%;
     }
 }
+@media(max-width: 810px){
+    .footer-content{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        row-gap: 50px;
+    }
+    .footer-content .logo-part,
+    .footer-content .footer-content-links{
+        flex-basis: 100%;
+    } 
+
+}
 @media(max-width: 780px){
     .why-choose .icons-container,
     .why-choose .numbers-container{
@@ -281,13 +293,6 @@
     .contact-container{
         max-width: 90%;
     }
-}
-@media(max-width: 700px){
-    .footer-content{
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    
 }
 @media(max-width: 680px){
     .top-line{
@@ -328,6 +333,14 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+    }
+}
+@media(max-width: 568px){
+    .footer-content-links{
+        flex-wrap: wrap;
+    }
+    .footer-content-links div{
+        flex-basis: calc(50% - 30px);
     }
 }
 @media(max-width: 528px){

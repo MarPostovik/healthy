@@ -627,7 +627,15 @@ input{
   padding-bottom: 114px;
   background: #FCFCFC;
   padding-top: 122px;
+  gap: 79px;
+}
+.footer-content-links{
+  justify-content: space-between;
+  width: 70%;
   gap: 30px;
+}
+.footer-content .logo-part{
+  flex-basis: 30%;
 }
 /* footer */
 
